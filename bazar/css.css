@@ -1,0 +1,199 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f7faf5;
+    color: #243b2a;
+    line-height: 1.9;
+}
+
+/* نوار بالای سایت */
+header {
+    background-color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px #00000008;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #34764a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #405546;
+    margin-right: 22px;
+}
+
+/* بخش معرفی سایت */
+.hero {
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+    color: #4b965e;
+}
+
+.hero-text p {
+    color: #667568;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #34764a;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #285c39;
+}
+
+/* تصویر گیاه */
+.hero-image {
+    flex: 1;
+    min-width: 280px;
+    min-height: 300px;
+    background: linear-gradient(135deg, #dcefdc, #a9d3ac);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 115px;
+}
+
+/* بخش امکانات */
+.features {
+    padding: 55px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #718073;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background-color: #f7faf5;
+    padding: 28px 20px;
+    border-radius: 20px;
+    border: 1px solid #e7eee4;
+}
+
+.card .icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #718073;
+    font-size: 14px;
+}
+
+/* بخش انتخاب گیاه */
+.plants {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.plant-selector {
+    margin: 25px auto;
+    max-width: 420px;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbdacb;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.plant-result {
+    background-color: white;
+    border-radius: 18px;
+    padding: 25px;
+    margin-top: 20px;
+    min-height: 110px;
+    box-shadow: 0 5px 20px #00000008;
+}
+
+.plant-result h3 {
+    color: #34764a;
+    margin-bottom: 8px;
+}
+
+/* پایین سایت */
+footer {
+    background-color: #244b32;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #d6e6d8;
+}
+
+/* نمایش در موبایل */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav a {
+        margin-right: 8px;
+        font-size: 12px;
+    }
+```

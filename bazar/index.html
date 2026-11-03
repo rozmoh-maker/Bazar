@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبزینه | مراقبت هوشمند از گیاهان</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #f7faf5;
+            color: #243b2a;
+            line-height: 1.9;
+        }
+
+        header {
+            background-color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px #00000008;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #34764a;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #405546;
+            margin-right: 22px;
+        }
+
+        .hero {
+            padding: 75px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-text h1 {
+            font-size: 38px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 span {
+            color: #4b965e;
+        }
+
+        .hero-text p {
+            color: #667568;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #34764a;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 280px;
+            min-height: 300px;
+            background: linear-gradient(135deg, #dcefdc, #a9d3ac);
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 115px;
+        }
+
+        .features {
+            padding: 55px 8%;
+            text-align: center;
+            background-color: white;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .section-description {
+            color: #718073;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background-color: #f7faf5;
+            padding: 28px 20px;
+            border-radius: 20px;
+            border: 1px solid #e7eee4;
+        }
+
+        .card .icon {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #718073;
+            font-size: 14px;
+        }
+
+        .plants {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .plant-selector {
+            margin: 25px auto;
+            max-width: 420px;
+        }
+
+        select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cbdacb;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 15px;
+            background-color: white;
+            margin-bottom: 15px;
+        }
+
+        .plant-result {
+            background-color: white;
+            border-radius: 18px;
+            padding: 25px;
+            margin-top: 20px;
+            min-height: 110px;
+            box-shadow: 0 5px 20px #00000008;
+        }
+
+        .plant-result h3 {
+            color: #34764a;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #244b32;
+            color: white;
+            text-align: center;
+            padding: 28px 15px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #d6e6d8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin-right: 8px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 45px 6%;
+            }
+
+            .hero-text h1 {
+                font-size: 29px;
+            }
+
+            .hero-image {
+                min-height: 220px;
+                font-size: 85px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">سبزینه </div>
+
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#features">امکانات</a>
+            <a href="#plants">گیاهان</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>
+                مراقبت از گیاهان،
+                <span>ساده‌تر از همیشه</span>
+            </h1>
+
+            <p>
+                با سبزینه، زمان مناسب آبیاری گیاهانت را فراموش نکن.
+                برنامه‌ای ساده برای داشتن گیاهانی شاداب‌تر و خانه‌ای سبزتر.
+            </p>
+
+            <a href="#plants" class="button">شروع مراقبت از گیاهان</a>
+        </div>
+
+        <div class="hero-image">
+            
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title">چرا سبزینه؟</h2>
+
+        <p class="section-description">
+            همه‌چیز برای مراقبت بهتر از گیاهان در یک جا
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon"></div>
+                <h3>یادآوری آبیاری</h3>
+                <p>
+                    زمان آبیاری گیاهانت را مشخص کن و مراقبت از آن‌ها را فراموش نکن.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon"></div>
+                <h3>راهنمای نگهداری</h3>
+                <p>
+                    با نیازهای اولیه گیاهان مختلف و روش صحیح نگهداری آن‌ها آشنا شو.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon"></div>
+                <h3>برنامه منظم</h3>
+                <p>
+                    برای رسیدگی به گیاهان خود یک برنامه ساده و منظم داشته باش.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="plants" id="plants">
+        <h2 class="section-title">گیاهت رو انتخاب کن</h2>
+
+        <p class="section-description">
+            گیاه موردنظرت رو انتخاب کن تا راهنمای آبیاری آن را ببینی.
+        </p>
+
+        <div class="plant-selector">
+            <select id="plantSelect">
+                <option value="">انتخاب گیاه</option>
+                <option value="pothos">پتوس</option>
+                <option value="cactus">کاکتوس</option>
+                <option value="peace">اسپاتی فیلوم</option>
+                <option value="snake">سانسوریا</option>
+            </select>
+
+            <button class="button" onclick="showPlantInfo()">
+                نمایش راهنمای گیاه
+            </button>
+
+            <div class="plant-result" id="plantResult">
+                <p>گیاهت رو انتخاب کن تا اطلاعاتش نمایش داده بشه.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>سبزینه 🌱</h3>
+        <p>قدم‌های کوچک برای خانه‌ای سبزتر</p>
+        <p>© تمامی حقوق این صفحه محفوظ است.</p>
+    </footer>
+
+    <script>
+        function showPlantInfo() {
+            const plant = document.getElementById("plantSelect").value;
+            const result = document.getElementById("plantResult");
+
+            const plants = {
+                pothos: {
+                    name: "پتوس ",
+                    info: "وقتی سطح خاک خشک شد، گیاه را آبیاری کن. از آبیاری بیش از حد خودداری کن."
+                },
+
+                cactus: {
+                    name: "کاکتوس ",
+                    info: "کاکتوس به آبیاری کم نیاز دارد. قبل از آبیاری، اجازه بده خاک کاملاً خشک شود."
+                },
+
+                peace: {
+                    name: "اسپاتی فیلوم ",
+                    info: "رطوبت ملایم را دوست دارد. وقتی سطح خاک رو به خشکی رفت، آن را آبیاری کن."
+                },
+
+                snake: {
+                    name: "سانسوریا ",
+                    info: "این گیاه به آب زیادی نیاز ندارد. بین دو آبیاری، اجازه بده خاک کاملاً خشک شود."
+                }
+            };
+
+            if (plant === "") {
+                result.innerHTML =
+                    "<p>لطفاً ابتدا یک گیاه انتخاب کن.</p>";
+                return;
+            }
+
+            result.innerHTML =
+                "<h3>" + plants[plant].name + "</h3>" +
+                "<p>" + plants[plant].info + "</p>";
+        }
+    </script>
+
+</body>
+</html>
+```
